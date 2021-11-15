@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+html{
+    /* font size 10px */
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+#header .container{
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+#header h1{
+    font-size: 2.1rem;
+    line-height: 2;
+    color: #222;
+    font-weight: 600;
+}
+
+#header ul{
+    margin: 20px 0 10px;
+}
+
+#header ul li{
+    margin: 10px 0;
+}
+#header ul li a{
+    font-size: 1.4rem;
+    color: #555;
+}
+
+/* 햄버거~! */
+.ham{
+    float: left;
+    cursor: pointer;
+}
+.search{
+    float: right;
+}
+.logo{
+    text-align: center;
+}
+/* 로딩시 체크박스 하이든.. 햄버그 효과 */
+#c_checkbox{
+    display: none;
+}
+/* 로딩시 체크가 되어있으면 gnb메뉴 하이든.. */
+#c_checkbox:checked+nav{
+    display: none;
+}
+/* 체크되면 gnb메뉴 보이게하기 / 기본은 되지만 웹, 브라우저는 안전성이 중요 */
+#c_checkbox+nav{
+    display: block;
+}
+
+/* contents 1 */
+#main_content{
+    background: #00afa0;
+    padding: 40px 15px 30px;
+    font-size: 1.4rem;
+}
+#main_content h2{
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#main_content p{
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* <!-- contents 2 --> */
+#sub_content{
+    padding: 30px;
+    font-size: 1.6rem;
+}
+#sub_content h2{
+    color: #171616;
+    font-size: 2rem;
+    text-align: center;
+}
+#sub_content img{
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+}
+
+/* footer */
+footer{
+    padding-top: 40px;
+}
+#footer footer{
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 40px;
+    text-align: center;
+    background: #323232;
+}
